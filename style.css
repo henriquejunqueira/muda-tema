@@ -1,0 +1,68 @@
+/*
+? Palheta de cores:
+* Laranja claro: #D9AB55
+* Roxo claro: #AA55D9
+* Verde claro: #55D994
+* Verde/Cinza claro: #5F8471
+* Marrom claro: #59564F
+* Branco: #ffffff
+* Branco mais escuro: #fffafa
+*/
+
+:root {
+  --white: #fffafa;
+  --green: #5f8471;
+  --dark: #222222;
+  --purple1: #7d1ad4;
+  --purple2: #6e17b9;
+}
+
+[data-theme='dark'] {
+  --white: #222222;
+  --dark: #fffafa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+button {
+  background-color: var(--purple1);
+  padding: 0.4rem;
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--purple2);
+  transition: 0.4s;
+}
+
+svg {
+  color: var(--white);
+  width: 24px;
+  height: 24px;
+}
